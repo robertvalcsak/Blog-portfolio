@@ -1,0 +1,44 @@
+ * {
+    margin: 0;
+    padding: 0;
+ }
+
+.nav {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav h1 {
+    font-weight: 600;
+}
+
+.linkbtns {
+    display: flex;
+    justify-content: space-between;
+    max-width: 200px;
+    width: 100%;
+    padding-right: 100px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.content-list {
+    display: flex;
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+    height: 100vh;
+    justify-content: center;
+}
+
+.content {
+    margin: 50px 0 50px 0;
+}
+
+.linkbtns p:hover {
+    background-color: royalblue;
+    color: whitesmoke;
+}
