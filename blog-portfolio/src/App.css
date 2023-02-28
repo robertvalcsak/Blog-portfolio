@@ -15,7 +15,7 @@
     font-weight: 600;
 }
 
-.linkbtns {
+.navLinks {
     display: flex;
     justify-content: space-between;
     max-width: 200px;
@@ -38,7 +38,7 @@
     margin: 50px 0 50px 0;
 }
 
-.linkbtns p:hover {
+.navLinks a:hover {
     background-color: royalblue;
     color: whitesmoke;
 }

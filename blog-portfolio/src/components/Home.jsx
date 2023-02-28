@@ -1,25 +1,16 @@
-import React, { useEffect, useState } from 'react'
-import Blogs from './Blogs';
+import useFetch from "../FetchHook";
+import Blogs from "./Blogs";
+import { CircularProgress } from '@mui/material';
 
 function Home() {
+    const {loading, data: blogs} = useFetch("http://localhost:8000/blogs");
 
-    const [blogs, setBlogs] = useState(null);
-
-    useEffect(() => {
-        fetch('http://localhost:8000/blogs')
-        .then(res => {
-            return res.json();
-        })
-        .then(data => {
-            setBlogs(data);
-        })
-    },[])
-    
   return (
-    <div className='Home'>
-       {blogs &&  < Blogs blogs={blogs} /> }
+    <div className="Home">
+      {loading && <CircularProgress />}
+      {blogs && <Blogs blogs={blogs} />}
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;
