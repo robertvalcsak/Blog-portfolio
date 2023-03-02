@@ -7,10 +7,9 @@ function Home() {
 
   return (
     <div className="Home">
-      {loading && <CircularProgress />}
-      {blogs && <Blogs blogs={blogs} />}
+      {loading ? <CircularProgress /> : <Blogs blogs={blogs} />}
     </div>
   );
 }
-
+ 
 export default Home;
