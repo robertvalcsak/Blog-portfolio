@@ -1,21 +1,31 @@
 import { CircularProgress } from '@mui/material';
 import React from 'react'
-import {useParams} from "react-router-dom"
+import { useParams, useNavigate } from "react-router-dom"
 import useFetch from '../FetchHook';
 
 function Wholeblog() {
 
-  const {id} = useParams();
-  const {loading, data : blogs} = useFetch("http://localhost:8000/blogs/" + id)
+  const { id } = useParams();
+  const { loading, data: blogs } = useFetch("http://localhost:8000/blogs/" + id)
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    fetch("http://localhost:8000/blogs/" + id, {
+      method: "DELETE"
+    })
+      .then((res) => res.json())
+    navigate("/")
+  }
 
   return (
     <div className='whole-blog'>
-      {loading ? <CircularProgress/> : (
-        <>
-        <h1>{blogs.title}</h1>
-        <h2>{blogs.content}</h2>
-        <h2>{blogs.author}</h2>
-        </>
+      {loading ? <CircularProgress /> : (
+        <article>
+          <h1>{blogs.title}</h1>
+          <p>{blogs.content}</p>
+          <h3>{blogs.author}</h3>
+          <button onClick={handleClick}>Delete blog</button>
+        </article>
       )}
     </div>
   )

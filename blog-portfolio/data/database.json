@@ -2,21 +2,21 @@
   "blogs": [
     {
       "title": "First Blog",
-      "content" : "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias, nobis.",
-      "author" : "Jake",
-      "id" : 1
+      "content": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias, nobis.",
+      "author": "Jake",
+      "id": 1
     },
     {
-        "title" : "Second BLog",
-        "content" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ex quam vel officia debitis aspernatur aliquid pariatur beatae ut. Maiores!",
-        "author" : "Bill",
-        "id" : 2
+      "title": "Second BLog",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ex quam vel officia debitis aspernatur aliquid pariatur beatae ut. Maiores!",
+      "author": "Bill",
+      "id": 2
     },
     {
-        "title" : "Third Blog",
-        "content" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam vel sed ea, itaque iure distinctio facere esse rem beatae consequatur nostrum suscipit illo. Quaerat repellat quia eos dolore, sapiente reiciendis!",
-        "author" : "Sophie",
-        "id" : 3
+      "title": "Third Blog",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam vel sed ea, itaque iure distinctio facere esse rem beatae consequatur nostrum suscipit illo. Quaerat repellat quia eos dolore, sapiente reiciendis!",
+      "author": "Sophie",
+      "id": 3
     }
   ]
 }
