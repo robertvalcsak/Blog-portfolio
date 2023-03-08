@@ -9,6 +9,7 @@
     height: 80px;
     justify-content: space-around;
     align-items: center;
+    border-bottom: 2px solid black;
 }
 
 .nav h1 {
@@ -25,13 +26,16 @@
     font-weight: 300;
 }
 
+.navLinks a {
+    color: black;
+}
+
 .content-list {
     display: flex;
     max-width: 1000px;
     width: 100%;
     margin: auto;
-    height: 100vh;
-    justify-content: center;
+    justify-content: center; 
 }
 
 .content {
@@ -41,4 +45,89 @@
 .navLinks a:hover {
     background-color: royalblue;
     color: whitesmoke;
+
+    animation: rotation 1s linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.add-blog {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+}
+
+.create h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+form label {
+    text-align: center;
+}
+
+form input {
+    margin-bottom: 25px;
+}
+
+form textarea {
+    margin-bottom: 25px;
+    min-width: 228px;
+    max-width: 300px;
+}
+
+.content h2 {
+    text-align: center;
+    color: black;
+}
+
+.content p {
+    text-align: center;
+    color: black;
+}
+
+.content:hover {
+    font-size: 40px;
+} 
+
+.whole-blog article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.whole-blog article h1 {
+    margin-bottom: 25px;
+}
+
+.whole-blog article p {
+    margin-bottom: 25px;
+}
+
+.whole-blog article h3 {
+    margin-bottom: 25px;
+}
+
+.MuiButton {
+    color: black;
+}
+
+.MuiButton:hover {
+    background-color: black;
+    color: red;
+    border-radius: 5px;
 }

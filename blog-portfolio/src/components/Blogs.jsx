@@ -7,7 +7,7 @@ function Blogs({ blogs }) {
     <div className='blogs'>
       {blogs.map((blog) => (
         <div className="content" key={blog.id}>
-          <Link to={`/blogs/${blog.id}`}>
+          <Link to={`/blogs/${blog.id}`} style={{textDecoration: "none", borderRadius: "5px"}}>
             <h2>{blog.title}</h2>
             <p>Written by {blog.author}</p>
           </Link>

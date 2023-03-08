@@ -2,6 +2,8 @@ import { CircularProgress } from '@mui/material';
 import React from 'react'
 import { useParams, useNavigate } from "react-router-dom"
 import useFetch from '../FetchHook';
+import IconButton from '@mui/material/IconButton';
+import DeleteIcon from '@mui/icons-material/Delete';
 
 function Wholeblog() {
 
@@ -24,7 +26,9 @@ function Wholeblog() {
           <h1>{blogs.title}</h1>
           <p>{blogs.content}</p>
           <h3>{blogs.author}</h3>
-          <button onClick={handleClick}>Delete blog</button>
+          <IconButton aria-label="delete" size="large">
+            <DeleteIcon onClick={handleClick} fontSize="inherit" className="MuiButton" />
+          </IconButton>
         </article>
       )}
     </div>
