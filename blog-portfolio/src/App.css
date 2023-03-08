@@ -47,19 +47,8 @@
 }
 
 .navLinks a:hover {
-    background-color: royalblue;
+    font-size: 26px;
     color: whitesmoke;
-
-    animation: rotation 1s linear;
-}
-
-@keyframes rotation {
-    from {
-        transform: rotate(0deg);
-    }
-    to{
-        transform: rotate(360deg);
-    }
 }
 
 .add-blog {
