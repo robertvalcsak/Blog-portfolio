@@ -60,6 +60,10 @@
     width: 100%;
 }
 
+.add-blog button {
+    font-family: 'Shantell Sans', cursive;
+}
+
 .create h1 {
     text-align: center;
 }
