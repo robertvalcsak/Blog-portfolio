@@ -5,6 +5,8 @@
 
  .App {
     height: 100vh;
+    font-family: 'Shantell Sans', cursive;
+    color: whitesmoke;
  }
 
 .nav {
@@ -31,7 +33,7 @@
 }
 
 .navLinks a {
-    color: black;
+    color: whitesmoke;
 }
 
 .content-list {
@@ -48,7 +50,7 @@
 
 .navLinks a:hover {
     font-size: 26px;
-    color: whitesmoke;
+    color: black;
 }
 
 .add-blog {
